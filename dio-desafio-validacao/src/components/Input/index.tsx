@@ -13,14 +13,14 @@ const Input = ({ control, name, errorMessage, ...rest }: IInputProps) => {
             <input
               {...rest}
               onChange={onChange}
-              onBlur={onBlur} 
+              onBlur={onBlur}
               value={value}
               ref={ref}
             />
           )}
         />
       </InputContainer>
-      {errorMessage ? <ErrorMessage>{errorMessage}</ErrorMessage> : null} 
+      {errorMessage ? <ErrorMessage>{errorMessage}</ErrorMessage> : null}
     </>
   );
 };

@@ -21,7 +21,6 @@ export const InputContainer = styled.div`
     }
 
 `
-
 export const ErrorMessage = styled.p`
     color: red;
     font-size:12px;

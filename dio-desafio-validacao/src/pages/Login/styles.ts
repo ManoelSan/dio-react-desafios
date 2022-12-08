@@ -1,7 +1,5 @@
 import styled from 'styled-components';
 
-
-
 export const Container = styled.div`
     width: 100%; 
     height: 100vh;
@@ -37,7 +35,6 @@ export const Row = styled.div`
     align-items: flex-start;
     justify-content: center;
 `
-
 export const Column = styled.div`
     width: 100%;
     display: flex;
@@ -48,4 +45,6 @@ export const Column = styled.div`
 export const Spacing = styled.div`
     margin: 10px 0;
 `
-
+export const Disabled = styled.button`
+    color: #565a61;    
+`
