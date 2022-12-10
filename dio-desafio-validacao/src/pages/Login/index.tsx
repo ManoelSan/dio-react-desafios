@@ -9,7 +9,10 @@ import { defaultValues, IFormLogin } from "./types";
 
 const schema = yup
   .object({
-    email: yup.string().email("E-mail inválido").required("Campo obrigatório"),
+    email: yup
+      .string()
+      .email("E-mail inválido")
+      .required("Campo obrigatório"),
     password: yup
       .string()
       .min(6, "No minimo 6 caracteres")
@@ -49,7 +52,7 @@ const Login = () => {
             errorMessage={errors?.password?.message}
           />
           <Spacing />
-          <Button title="Entrar" disabled={isValid}/>
+          <Button title="Entrar" isDisabled={!isValid} />
         </Column>
       </LoginContainer>
     </Container>
